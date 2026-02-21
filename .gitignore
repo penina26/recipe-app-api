@@ -1,0 +1,15 @@
+# Docker
+.docker
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+*.env
+app.env
+.venv/
+venv/
+env/
