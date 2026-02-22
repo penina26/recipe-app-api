@@ -190,3 +190,5 @@ class PrivateRecipeAPITests(TestCase):
         # Should return 404 because the queryset is filtered to the logged-in user
         self.assertEqual(res.status_code, status.HTTP_404_NOT_FOUND)
         self.assertTrue(Recipe.objects.filter(id=recipe.id).exists())
+
+        

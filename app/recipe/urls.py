@@ -9,10 +9,10 @@ from recipe import views
 #  Create the router
 router = DefaultRouter()
 
-# Register our ViewSet with the router
-# This automatically assigns the '/recipes/' and '/recipes/<id>/' endpoints
+
 router.register('recipes', views.RecipeViewSet)
-# Define the app name so the reverse() function in our tests can find it
+router.register('tags', views.TagViewSet)
+
 app_name = 'recipe'
 
 urlpatterns = [
